@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD54ED8E166803AC002D997D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD54ED8D166803AC002D997D /* Cocoa.framework */; };
+		CD54ED98166803AC002D997D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD54ED96166803AC002D997D /* InfoPlist.strings */; };
+		CD54ED9A166803AC002D997D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54ED99166803AC002D997D /* main.m */; };
+		CD54ED9E166803AC002D997D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD54ED9C166803AC002D997D /* Credits.rtf */; };
+		CD54EDA1166803AC002D997D /* JBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDA0166803AC002D997D /* JBAppDelegate.m */; };
+		CD54EDA4166803AC002D997D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD54EDA2166803AC002D997D /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD54ED89166803AC002D997D /* JBShellView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBShellView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54ED8D166803AC002D997D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CD54ED90166803AC002D997D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CD54ED91166803AC002D997D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CD54ED92166803AC002D997D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD54ED95166803AC002D997D /* JBShellView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JBShellView-Info.plist"; sourceTree = "<group>"; };
+		CD54ED97166803AC002D997D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD54ED99166803AC002D997D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD54ED9B166803AC002D997D /* JBShellView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JBShellView-Prefix.pch"; sourceTree = "<group>"; };
+		CD54ED9D166803AC002D997D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CD54ED9F166803AC002D997D /* JBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBAppDelegate.h; sourceTree = "<group>"; };
+		CD54EDA0166803AC002D997D /* JBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBAppDelegate.m; sourceTree = "<group>"; };
+		CD54EDA3166803AC002D997D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD54ED86166803AC002D997D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54ED8E166803AC002D997D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD54ED7E166803AC002D997D = {
+			isa = PBXGroup;
+			children = (
+				CD54ED93166803AC002D997D /* JBShellView */,
+				CD54ED8C166803AC002D997D /* Frameworks */,
+				CD54ED8A166803AC002D997D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD54ED8A166803AC002D997D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD54ED89166803AC002D997D /* JBShellView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD54ED8C166803AC002D997D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD54ED8D166803AC002D997D /* Cocoa.framework */,
+				CD54ED8F166803AC002D997D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD54ED8F166803AC002D997D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD54ED90166803AC002D997D /* AppKit.framework */,
+				CD54ED91166803AC002D997D /* CoreData.framework */,
+				CD54ED92166803AC002D997D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CD54ED93166803AC002D997D /* JBShellView */ = {
+			isa = PBXGroup;
+			children = (
+				CD54ED9F166803AC002D997D /* JBAppDelegate.h */,
+				CD54EDA0166803AC002D997D /* JBAppDelegate.m */,
+				CD54EDA2166803AC002D997D /* MainMenu.xib */,
+				CD54ED94166803AC002D997D /* Supporting Files */,
+			);
+			path = JBShellView;
+			sourceTree = "<group>";
+		};
+		CD54ED94166803AC002D997D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD54ED95166803AC002D997D /* JBShellView-Info.plist */,
+				CD54ED96166803AC002D997D /* InfoPlist.strings */,
+				CD54ED99166803AC002D997D /* main.m */,
+				CD54ED9B166803AC002D997D /* JBShellView-Prefix.pch */,
+				CD54ED9C166803AC002D997D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD54ED88166803AC002D997D /* JBShellView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD54EDA7166803AC002D997D /* Build configuration list for PBXNativeTarget "JBShellView" */;
+			buildPhases = (
+				CD54ED85166803AC002D997D /* Sources */,
+				CD54ED86166803AC002D997D /* Frameworks */,
+				CD54ED87166803AC002D997D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBShellView;
+			productName = JBShellView;
+			productReference = CD54ED89166803AC002D997D /* JBShellView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD54ED80166803AC002D997D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JB;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jason Brennan";
+			};
+			buildConfigurationList = CD54ED83166803AC002D997D /* Build configuration list for PBXProject "JBShellView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD54ED7E166803AC002D997D;
+			productRefGroup = CD54ED8A166803AC002D997D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD54ED88166803AC002D997D /* JBShellView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD54ED87166803AC002D997D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54ED98166803AC002D997D /* InfoPlist.strings in Resources */,
+				CD54ED9E166803AC002D997D /* Credits.rtf in Resources */,
+				CD54EDA4166803AC002D997D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD54ED85166803AC002D997D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54ED9A166803AC002D997D /* main.m in Sources */,
+				CD54EDA1166803AC002D997D /* JBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD54ED96166803AC002D997D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD54ED97166803AC002D997D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD54ED9C166803AC002D997D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD54ED9D166803AC002D997D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CD54EDA2166803AC002D997D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD54EDA3166803AC002D997D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD54EDA5166803AC002D997D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CD54EDA6166803AC002D997D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CD54EDA8166803AC002D997D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JBShellView/JBShellView-Prefix.pch";
+				INFOPLIST_FILE = "JBShellView/JBShellView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD54EDA9166803AC002D997D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JBShellView/JBShellView-Prefix.pch";
+				INFOPLIST_FILE = "JBShellView/JBShellView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD54ED83166803AC002D997D /* Build configuration list for PBXProject "JBShellView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54EDA5166803AC002D997D /* Debug */,
+				CD54EDA6166803AC002D997D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD54EDA7166803AC002D997D /* Build configuration list for PBXNativeTarget "JBShellView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54EDA8166803AC002D997D /* Debug */,
+				CD54EDA9166803AC002D997D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD54ED80166803AC002D997D /* Project object */;
+}
