@@ -13,14 +13,12 @@
 
 
 @interface JBShellView () <NSTextViewDelegate>
+
 @property (nonatomic, assign) NSUInteger lastCommandStart;
 @property (assign) BOOL delayedOutputMode;
 @property (assign) BOOL userEnteredText;
 @property (nonatomic, strong, readwrite) JBShellCommandHistory *commandHistory;
-
-
 @property (strong) JBTextEditorProcessor *textProcessor;
-
 
 @end
 
@@ -33,7 +31,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code here.
 		
 		self.prompt = prompt?: @"> ";
 		self.inputHandler = [inputHandler copy];
@@ -58,6 +55,7 @@
 
 
 - (id)initWithFrame:(NSRect)frameRect {
+	// Example implementation of what it might look like.
 	return [self initWithFrame:frameRect prompt:@"> " inputHandler:^(NSString *input, JBShellView *sender) {
 		NSRange errorRange = [input rangeOfString:@"nwe"];
 		if (errorRange.location != NSNotFound)
@@ -89,7 +87,6 @@
 
 - (void)setInputHandler:(JBShellViewInputProcessingHandler)inputHandler {
 	_inputHandler = [inputHandler copy];
-	NSLog(@"SET");
 }
 
 
@@ -157,6 +154,19 @@
 }
 
 #pragma mark - NSTextView overrides
+
+
+- (BOOL)shouldChangeTextInRange:(NSRange)affectedCharRange replacementString:(NSString *)replacementString {
+	// Do not accept a modification outside the current command start
+	if (replacementString && affectedCharRange.location < self.commandStart) {
+		NSBeep();
+		return NO;
+	} else {
+		self.userEnteredText = YES;
+		return YES;
+	}
+}
+
 
 - (void)keyDown:(NSEvent *)theEvent {
 	if ([theEvent type] != NSKeyDown) {
@@ -355,17 +365,6 @@
 
 
 #pragma mark - NSTextViewDelegate implementation
-
-- (BOOL)shouldChangeTextInRange:(NSRange)affectedCharRange replacementString:(NSString *)replacementString {
-	// Do not accept a modification outside the current command start
-	if (replacementString && affectedCharRange.location < self.commandStart) {
-		NSBeep();
-		return NO;
-	} else {
-		self.userEnteredText = YES;
-		return YES;
-	}
-}
 
 
 - (BOOL)textView:(NSTextView *)textView doCommandBySelector:(SEL)commandSelector {

@@ -22,7 +22,7 @@
 @property (nonatomic, strong, readonly) JBShellCommandHistory *commandHistory;
 @property (nonatomic, copy) JBShellViewInputProcessingHandler inputHandler;
 
-@property (nonatomic, copy) JBShellViewDragHandler numberDragHandler;
+@property (nonatomic, copy) JBShellViewDragHandler numberDragHandler; // For subclasses
 @property (nonatomic, copy) JBShellViewDragHandler colorPickerDragHandler;
 
 @property (nonatomic, strong) JBSuggestionWindowController *suggestionWindowController;
