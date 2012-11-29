@@ -10,6 +10,8 @@
 #import "JBShellContainerView.h"
 #import "JBShellView.h"
 
+#define kSearchString @"search "
+
 
 @interface JBAppDelegate ()
 @property (nonatomic, strong) JBShellContainerView *shellContainer;
@@ -25,18 +27,36 @@
 	
     self.shellContainer = [[JBShellContainerView alloc] initWithFrame:bounds shellViewClass:nil prompt:prompt shellInputProcessingHandler:^(NSString *input, JBShellView *sender) {
 		
-		// If you're doing a long operation, use this and make sure to end it when you're done.
-		//[sender beginDelayedOutputMode];
-		
-		// Do some potentially long asynchronous task and append any output
-		[sender appendOutputWithNewlines:@"I'm sorry Dave, I'm afraid I can't do that."];
-		// Or append an error
-		// [sender showErrorOutput:@"I'm sorry Dave." errorRange:NSMakeRange(0, [input length])];
-		
-		// Call this when the task is done
-		//[sender endDelayedOutputMode];
-		
-		
+		if ([input hasPrefix:kSearchString]) {
+			// If you're doing a long operation, use this and make sure to end it when you're done.
+			[sender beginDelayedOutputMode];
+			
+			// Do some potentially long asynchronous task and append any output
+			NSInteger index = NSMaxRange([input rangeOfString:kSearchString]);
+			NSString *query = [[input substringFromIndex:index] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+			NSString *url = [NSString stringWithFormat:@"http://api.duckduckgo.com/?q=%@&format=json", query];
+			NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+			
+			[NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+				if (error) {
+					[sender showErrorOutput:@"Error searching" errorRange:NSMakeRange(0, [input length])];
+				} else {
+					NSDictionary *results = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:NULL];
+					NSArray *relatedTopics = [results valueForKey:@"RelatedTopics"];
+					if ([relatedTopics count]) {
+						NSDictionary *firstResult = relatedTopics[0];
+						[sender appendOutputWithNewlines:firstResult[@"Text"]];
+					} else {
+						[sender appendOutputWithNewlines:@"No results"];
+					}
+				}
+				// Call this when the task is done
+				[sender endDelayedOutputMode];
+			}];
+			
+		} else {
+			[sender appendOutputWithNewlines:@"Try 'search Kubrick'"];
+		}
 	}];
 	
 	
