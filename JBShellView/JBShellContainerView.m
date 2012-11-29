@@ -25,7 +25,7 @@
 		CGSize contentSize = [scrollView contentSize];
 		[scrollView setBackgroundColor:[NSColor whiteColor]];
 		
-		
+		if (shellViewClass == nil) shellViewClass = [JBShellView class];
 		JBShellView *shellView = [[shellViewClass alloc] initWithFrame:CGRectMake(0, 0, contentSize.width, contentSize.height) prompt:prompt inputHandler:inputProcessingHandler];
 		[shellView setAutoresizingMask:NSViewWidthSizable];
 		[shellView setMinSize:CGSizeMake(0.0f, contentSize.height)];

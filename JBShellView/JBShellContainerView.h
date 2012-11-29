@@ -14,6 +14,7 @@
 @property (strong) JBShellView *shellView;
 
 
+// If `shellViewClass` == nil then JBShellView is used
 - (id)initWithFrame:(NSRect)frameRect shellViewClass:(Class)shellViewClass prompt:(NSString *)prompt shellInputProcessingHandler:(JBShellViewInputProcessingHandler)inputProcessingHandler;
 
 @end
