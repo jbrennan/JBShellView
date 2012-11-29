@@ -14,6 +14,9 @@
 		CD54EDA1166803AC002D997D /* JBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDA0166803AC002D997D /* JBAppDelegate.m */; };
 		CD54EDA4166803AC002D997D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD54EDA2166803AC002D997D /* MainMenu.xib */; };
 		CD54EDB11668052D002D997D /* JBTextEditorProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDB01668052D002D997D /* JBTextEditorProcessor.m */; };
+		CD54EDD7166805C8002D997D /* JBShellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDD1166805C8002D997D /* JBShellView.m */; };
+		CD54EDD8166805C8002D997D /* JBShellContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDD3166805C8002D997D /* JBShellContainerView.m */; };
+		CD54EDD9166805C8002D997D /* JBShellCommandHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDD6166805C8002D997D /* JBShellCommandHistory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,13 @@
 		CD54EDAF1668052D002D997D /* JBTextEditorProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBTextEditorProcessor.h; path = ModernCocoaText/TextEditing/JBTextEditorProcessor.h; sourceTree = "<group>"; };
 		CD54EDB01668052D002D997D /* JBTextEditorProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBTextEditorProcessor.m; path = ModernCocoaText/TextEditing/JBTextEditorProcessor.m; sourceTree = "<group>"; };
 		CD54EDB216680539002D997D /* ParseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParseKit.xcodeproj; path = parsekit/ParseKit.xcodeproj; sourceTree = "<group>"; };
+		CD54EDD0166805C8002D997D /* JBShellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBShellView.h; sourceTree = "<group>"; };
+		CD54EDD1166805C8002D997D /* JBShellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBShellView.m; sourceTree = "<group>"; };
+		CD54EDD2166805C8002D997D /* JBShellContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBShellContainerView.h; sourceTree = "<group>"; };
+		CD54EDD3166805C8002D997D /* JBShellContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBShellContainerView.m; sourceTree = "<group>"; };
+		CD54EDD4166805C8002D997D /* JBShellViewBlockTypedefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBShellViewBlockTypedefs.h; sourceTree = "<group>"; };
+		CD54EDD5166805C8002D997D /* JBShellCommandHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBShellCommandHistory.h; sourceTree = "<group>"; };
+		CD54EDD6166805C8002D997D /* JBShellCommandHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBShellCommandHistory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +152,13 @@
 				CD54ED9F166803AC002D997D /* JBAppDelegate.h */,
 				CD54EDA0166803AC002D997D /* JBAppDelegate.m */,
 				CD54EDA2166803AC002D997D /* MainMenu.xib */,
+				CD54EDD0166805C8002D997D /* JBShellView.h */,
+				CD54EDD1166805C8002D997D /* JBShellView.m */,
+				CD54EDD2166805C8002D997D /* JBShellContainerView.h */,
+				CD54EDD3166805C8002D997D /* JBShellContainerView.m */,
+				CD54EDD4166805C8002D997D /* JBShellViewBlockTypedefs.h */,
+				CD54EDD5166805C8002D997D /* JBShellCommandHistory.h */,
+				CD54EDD6166805C8002D997D /* JBShellCommandHistory.m */,
 				CD54ED94166803AC002D997D /* Supporting Files */,
 			);
 			path = JBShellView;
@@ -318,6 +335,9 @@
 				CD54ED9A166803AC002D997D /* main.m in Sources */,
 				CD54EDA1166803AC002D997D /* JBAppDelegate.m in Sources */,
 				CD54EDB11668052D002D997D /* JBTextEditorProcessor.m in Sources */,
+				CD54EDD7166805C8002D997D /* JBShellView.m in Sources */,
+				CD54EDD8166805C8002D997D /* JBShellContainerView.m in Sources */,
+				CD54EDD9166805C8002D997D /* JBShellCommandHistory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
