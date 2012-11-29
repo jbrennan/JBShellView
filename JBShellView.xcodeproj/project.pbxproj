@@ -13,7 +13,60 @@
 		CD54ED9E166803AC002D997D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD54ED9C166803AC002D997D /* Credits.rtf */; };
 		CD54EDA1166803AC002D997D /* JBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDA0166803AC002D997D /* JBAppDelegate.m */; };
 		CD54EDA4166803AC002D997D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD54EDA2166803AC002D997D /* MainMenu.xib */; };
+		CD54EDB11668052D002D997D /* JBTextEditorProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDB01668052D002D997D /* JBTextEditorProcessor.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD54EDC21668053A002D997D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = ParseKit;
+		};
+		CD54EDC41668053A002D997D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D389F1CE0F1965E600558235;
+			remoteInfo = JSParseKit;
+		};
+		CD54EDC61668053A002D997D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3FDC5830FFC4BFC00F1F797;
+			remoteInfo = ParseKitMobile;
+		};
+		CD54EDC81668053A002D997D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D37D8DC61571A4F700CDB822;
+			remoteInfo = Tests;
+		};
+		CD54EDCA1668053A002D997D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D33494100E2963FD00406085;
+			remoteInfo = DemoApp;
+		};
+		CD54EDCC1668053A002D997D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D34185040E520D3F0081B0DC;
+			remoteInfo = DebugApp;
+		};
+		CD54EDCE1668053A002D997D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D389F2030F196A7500558235;
+			remoteInfo = JSDemoApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CD54ED89166803AC002D997D /* JBShellView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBShellView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +82,9 @@
 		CD54ED9F166803AC002D997D /* JBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBAppDelegate.h; sourceTree = "<group>"; };
 		CD54EDA0166803AC002D997D /* JBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBAppDelegate.m; sourceTree = "<group>"; };
 		CD54EDA3166803AC002D997D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CD54EDAF1668052D002D997D /* JBTextEditorProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBTextEditorProcessor.h; path = ModernCocoaText/TextEditing/JBTextEditorProcessor.h; sourceTree = "<group>"; };
+		CD54EDB01668052D002D997D /* JBTextEditorProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBTextEditorProcessor.m; path = ModernCocoaText/TextEditing/JBTextEditorProcessor.m; sourceTree = "<group>"; };
+		CD54EDB216680539002D997D /* ParseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParseKit.xcodeproj; path = parsekit/ParseKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +138,7 @@
 		CD54ED93166803AC002D997D /* JBShellView */ = {
 			isa = PBXGroup;
 			children = (
+				CD54EDAA166803B7002D997D /* Libraries */,
 				CD54ED9F166803AC002D997D /* JBAppDelegate.h */,
 				CD54EDA0166803AC002D997D /* JBAppDelegate.m */,
 				CD54EDA2166803AC002D997D /* MainMenu.xib */,
@@ -100,6 +157,39 @@
 				CD54ED9C166803AC002D997D /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD54EDAA166803B7002D997D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CD54EDB216680539002D997D /* ParseKit.xcodeproj */,
+				CD54EDAB166804DD002D997D /* JBTextProcessor */,
+			);
+			name = Libraries;
+			path = Libaries;
+			sourceTree = "<group>";
+		};
+		CD54EDAB166804DD002D997D /* JBTextProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				CD54EDAF1668052D002D997D /* JBTextEditorProcessor.h */,
+				CD54EDB01668052D002D997D /* JBTextEditorProcessor.m */,
+			);
+			name = JBTextProcessor;
+			sourceTree = "<group>";
+		};
+		CD54EDB316680539002D997D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD54EDC31668053A002D997D /* ParseKit.framework */,
+				CD54EDC51668053A002D997D /* JSParseKit.framework */,
+				CD54EDC71668053A002D997D /* libparsekit.a */,
+				CD54EDC91668053A002D997D /* Tests.octest */,
+				CD54EDCB1668053A002D997D /* DemoApp.app */,
+				CD54EDCD1668053A002D997D /* DebugApp.app */,
+				CD54EDCF1668053A002D997D /* JSDemoApp.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,12 +232,70 @@
 			mainGroup = CD54ED7E166803AC002D997D;
 			productRefGroup = CD54ED8A166803AC002D997D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD54EDB316680539002D997D /* Products */;
+					ProjectRef = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CD54ED88166803AC002D997D /* JBShellView */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD54EDC31668053A002D997D /* ParseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParseKit.framework;
+			remoteRef = CD54EDC21668053A002D997D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD54EDC51668053A002D997D /* JSParseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSParseKit.framework;
+			remoteRef = CD54EDC41668053A002D997D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD54EDC71668053A002D997D /* libparsekit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libparsekit.a;
+			remoteRef = CD54EDC61668053A002D997D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD54EDC91668053A002D997D /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = CD54EDC81668053A002D997D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD54EDCB1668053A002D997D /* DemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DemoApp.app;
+			remoteRef = CD54EDCA1668053A002D997D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD54EDCD1668053A002D997D /* DebugApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DebugApp.app;
+			remoteRef = CD54EDCC1668053A002D997D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD54EDCF1668053A002D997D /* JSDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = JSDemoApp.app;
+			remoteRef = CD54EDCE1668053A002D997D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CD54ED87166803AC002D997D /* Resources */ = {
@@ -169,6 +317,7 @@
 			files = (
 				CD54ED9A166803AC002D997D /* main.m in Sources */,
 				CD54EDA1166803AC002D997D /* JBAppDelegate.m in Sources */,
+				CD54EDB11668052D002D997D /* JBTextEditorProcessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

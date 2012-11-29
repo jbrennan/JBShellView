@@ -1,0 +1,6 @@
+[submodule "JBShellView/Libaries/parsekit"]
+	path = JBShellView/Libaries/parsekit
+	url = git://github.com/jbrennan/parsekit.git
+[submodule "JBShellView/Libaries/ModernCocoaText"]
+	path = JBShellView/Libaries/ModernCocoaText
+	url = git://github.com/jbrennan/ModernCocoaText.git
