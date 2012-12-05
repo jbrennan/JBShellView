@@ -5,7 +5,7 @@
 //  Created by Jason Brennan on 12-07-20.
 //  Copyright (c) 2012 Jason Brennan. All rights reserved.
 //
-//  A stack represnting the history of our command shell.
+//  A stack representing the history of our command shell.
 
 #import <Foundation/Foundation.h>
 
@@ -20,4 +20,5 @@
 - (NSString *)currentCommand; // the command at the current stack pointer
 - (NSString *)commandAtIndex:(NSUInteger)index; // returns nil if index is out of bounds
 - (NSString *)commandForRange:(NSRange)range;
+
 @end
